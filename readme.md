@@ -86,6 +86,10 @@ Now you are inside the container, download the `jenkins.war` file from the offic
 # wget wget http://updates.jenkins-ci.org/download/war/2.176.1/jenkins.war
 ```
 
+```console 
+curl -o http://updates.jenkins-ci.org/download/war/2.176.1/jenkins.war
+```
+
 Replace the version with the one that fits to you.
 
 The next step is to move that file and replace the oldest one.
