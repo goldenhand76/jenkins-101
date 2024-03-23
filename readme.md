@@ -82,12 +82,17 @@ $ docker container exec -u 0 -it jenkins-docker_1 /bin/bash
 ```
 
 Now you are inside the container, download the `jenkins.war` file from the official site like.
+## Download using wget
 ```console
 # wget wget http://updates.jenkins-ci.org/download/war/2.176.1/jenkins.war
 ```
-
+## Download using curl
 ```console 
-curl -o http://updates.jenkins-ci.org/download/war/2.176.1/jenkins.war
+curl -O http://updates.jenkins-ci.org/download/war/2.176.1/jenkins.war
+```
+## Copy from local
+```console
+docker cp jenkins.war jenkins-blueocean:/usr/share/jenkins/
 ```
 
 Replace the version with the one that fits to you.
